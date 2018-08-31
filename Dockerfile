@@ -9,3 +9,4 @@ RUN ["/hugo", "version"]
 FROM alpine
 
 COPY --from=download /hugo /bin/hugo
+RUN apk add git openssh-client
